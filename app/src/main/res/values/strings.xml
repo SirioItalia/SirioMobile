@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Sirio Italia</string>
+
+    <!-- Page d'accueil -->
+    <string name="home_page_title">A découvrir</string>
+    <string name="home_page_last_article_section">Nos derniers articles</string>
+
+    <!-- Page de Collection -->
+    <string name="collection_page_title">Ma collection</string>
+
+    <!-- Page d'ajout de plantes -->
+    <string name="add_article_page_title">Ajout d\'un article</string>
+    <string name="add_article_upload_button">Importer une image</string>
+    <string name="add_article_name_input">@string/item_article_name</string>
+    <string name="add_article_description_input">@string/item_article_description</string>
+    <!-- ajouter reste input (liste déroulante catégorie)-->
+
+    <string name="add_article_page_confirm_button">Confirmer</string>
+
+    <!-- Fenetre Popup de details (à voir) -->
+    <string name="popup_article_name">Nom Article</string>
+
+    <!-- Article customize -->
+    <string name="item_article_name">Nom de l\'article</string>
+    <string name="item_article_description">Description de l\'article</string>
+
+</resources>
