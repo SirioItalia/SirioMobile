@@ -17,8 +17,10 @@
 
     <string name="add_article_page_confirm_button">Confirmer</string>
 
-    <!-- Fenetre Popup de details (à voir) -->
-    <string name="popup_article_name">Nom Article</string>
+    <!-- Fenetre page d'un article (à voir) -->
+    <string name="popup_article_name">@string/item_article_name</string>
+    <string name="popup_article_description_title">Description de l\'article</string>
+    <string name="popup_article_description_subtitle">@string/item_article_description</string>
 
     <!-- Article customize -->
     <string name="item_article_name">Nom de l\'article</string>

@@ -1,5 +1,6 @@
 package com.zenlaeth.sirioitalia.adapter
 
+import android.content.Intent
 import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
@@ -8,13 +9,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.zenlaeth.sirioitalia.ArticleModel
-import com.zenlaeth.sirioitalia.ArticleRepository
-import com.zenlaeth.sirioitalia.MainActivity
-import com.zenlaeth.sirioitalia.R
+import com.zenlaeth.sirioitalia.*
 
 class ArticleAdapter(
-    private val context: MainActivity,
+    val context: MainActivity,
     private val articleList: List<ArticleModel>,
     private val layoutId: Int
 ) : RecyclerView.Adapter<ArticleAdapter.ViewHolder>(){
@@ -24,6 +22,14 @@ class ArticleAdapter(
         val articleImage = view.findViewById<ImageView>(R.id.image_item)
         val articleName:TextView? = view.findViewById(R.id.name_item)
         val articleDescription:TextView? = view.findViewById(R.id.description_item)
+
+        init {
+            view.setOnClickListener{
+                val intent = Intent(view.context, ArticleDetails::class.java)
+                intent.putExtra("picture", articleImage)
+                view.context.startActivity(intent)
+            }
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -55,5 +61,4 @@ class ArticleAdapter(
     }
 
     override fun getItemCount(): Int = articleList.size
-
 }
