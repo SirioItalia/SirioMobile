@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide
 import com.zenlaeth.sirioitalia.*
 
 class ArticleAdapter(
-    val context: MainActivity,
+    val context: HomeActivity,
     private val articleList: List<ArticleModel>,
     private val layoutId: Int
 ) : RecyclerView.Adapter<ArticleAdapter.ViewHolder>(){
@@ -26,7 +26,7 @@ class ArticleAdapter(
         init {
             view.setOnClickListener{
                 val intent = Intent(view.context, ArticleDetails::class.java)
-                intent.putExtra("picture", articleImage)
+                // intent.putExtra("picture", articleImage)
                 view.context.startActivity(intent)
             }
         }

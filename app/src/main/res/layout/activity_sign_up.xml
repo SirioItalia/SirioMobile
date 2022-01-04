@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".SignInActivity">
+
+    <TextView
+        android:id="@+id/titleLabelTvSignUp"
+        android:layout_above="@+id/continueTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome to Sirio Italia"
+        style="@style/TitleTextStyle"/>
+
+    <TextView
+        android:id="@+id/continueTvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Sign in to continue"
+        android:layout_above="@+id/fullNameTilSignUp"
+        android:layout_marginBottom="30dp"
+        style="@style/DefaultTextStyle"/>
+
+    <!-- Full name -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fullNameTilSignUp"
+        android:layout_above="@+id/emailTilSignUp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/fullNameEtSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Full Name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Email -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTilSignUp"
+        android:layout_above="@+id/passwordTilSignUp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/emailEtSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTilSignUp"
+        app:passwordToggleEnabled="true"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/passwordEtSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password again -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordAgainTilSignUp"
+        android:layout_below="@+id/passwordTilSignUp"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/passwordAgainEtSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password Again"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Login button -->
+    <Button
+        android:id="@+id/loginBSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@+id/passwordAgainTilSignUp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Account ? Sign in -->
+    <TextView
+        android:id="@+id/AccountTvSignUp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/loginBSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/account"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        style="@style/DefaultTextStyle"/>
+</RelativeLayout>

@@ -26,4 +26,10 @@
     <string name="item_article_name">Nom de l\'article</string>
     <string name="item_article_description">Description de l\'article</string>
 
+    <!-- Sign up bold -->
+    <string name="no_account">Don\'t have an account? <b>Sign up</b></string>
+
+    <!-- Sign in bold -->
+    <string name="account">Have an account? <b>Sign in</b></string>
+
 </resources>

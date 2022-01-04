@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/trending1"/>/>
+        android:src="@drawable/trending1"/>
 
     </androidx.cardview.widget.CardView>
 
@@ -45,4 +45,14 @@
         android:layout_marginLeft="@dimen/default_margin"
         style="@style/DefaultTextStyle"
         />
+
+    <Button
+        android:id="@+id/loginBSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@+id/passwordTilSignIn"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/default_margin"
+        android:text="Add to cart" />
 </LinearLayout>

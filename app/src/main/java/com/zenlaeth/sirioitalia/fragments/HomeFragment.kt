@@ -6,14 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
-import com.zenlaeth.sirioitalia.ArticleModel
 import com.zenlaeth.sirioitalia.ArticleRepository.Singleton.articleList
-import com.zenlaeth.sirioitalia.MainActivity
+import com.zenlaeth.sirioitalia.HomeActivity
 import com.zenlaeth.sirioitalia.R
 import com.zenlaeth.sirioitalia.adapter.ArticleAdapter
 import com.zenlaeth.sirioitalia.adapter.ArticleItemDecoration
 
-class HomeFragment(private val context: MainActivity) : Fragment() {
+class HomeFragment(private val context: HomeActivity) : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view =  inflater?.inflate(R.layout.fragment_home, container, false)
