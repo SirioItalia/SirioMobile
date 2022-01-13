@@ -9,7 +9,7 @@ import android.widget.TextView
 class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_up)
+        setContentView(R.layout.sign_up_activity)
 
         var loginB = findViewById<Button>(R.id.loginBSignUp)
         loginB.setOnClickListener {

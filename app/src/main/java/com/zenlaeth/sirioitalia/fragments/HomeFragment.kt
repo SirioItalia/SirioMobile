@@ -19,11 +19,11 @@ class HomeFragment(private val context: HomeActivity) : Fragment() {
 
         // recuperer le RecycleView
         val horizontalRecyclerView = view.findViewById<RecyclerView>(R.id.horizontal_recycler_view)
-        horizontalRecyclerView.adapter = ArticleAdapter(context, articleList, R.layout.item_horizontal_article)
+        horizontalRecyclerView.adapter = ArticleAdapter(context, articleList, R.layout.article_item_horizontal)
 
         // recuperer le second RecycleView
         val verticalRecyclerView = view.findViewById<RecyclerView>(R.id.vertical_recycler_view)
-        verticalRecyclerView.adapter = ArticleAdapter(context ,articleList, R.layout.item_vertical_article)
+        verticalRecyclerView.adapter = ArticleAdapter(context ,articleList, R.layout.article_item_vertical)
         verticalRecyclerView.addItemDecoration(ArticleItemDecoration())
 
         return view
