@@ -1,35 +1,41 @@
 <resources>
     <string name="app_name">Sirio Italia</string>
+    <!-- Page d'accueil -->
+    <string name="bottom_home_item">Home</string>
+    <string name="bottom_settings_item">Settings</string>
 
     <!-- Page d'accueil -->
-    <string name="home_page_title">A découvrir</string>
-    <string name="home_page_last_article_section">Nos derniers articles</string>
+    <string name="home_page_title">Discover</string>
+    <string name="home_page_last_article_section">Our last articles</string>
 
     <!-- Page de Collection -->
-    <string name="collection_page_title">Ma collection</string>
+    <string name="collection_page_title">My collection</string>
 
-    <!-- Page d'ajout de plantes -->
-    <string name="add_article_page_title">Ajout d\'un article</string>
-    <string name="add_article_upload_button">Importer une image</string>
+    <!-- Page d'ajout d'un article' -->
+    <string name="add_article_page_title">Add article</string>
+    <string name="add_article_upload_button">Import image</string>
     <string name="add_article_name_input">@string/item_article_name</string>
     <string name="add_article_description_input">@string/item_article_description</string>
     <!-- ajouter reste input (liste déroulante catégorie)-->
 
-    <string name="add_article_page_confirm_button">Confirmer</string>
+    <string name="add_article_page_confirm_button">Confirm</string>
 
     <!-- Fenetre page d'un article (à voir) -->
     <string name="popup_article_name">@string/item_article_name</string>
-    <string name="popup_article_description_title">Description de l\'article</string>
+    <string name="popup_article_description_title">Description</string>
     <string name="popup_article_description_subtitle">@string/item_article_description</string>
 
     <!-- Article customize -->
-    <string name="item_article_name">Nom de l\'article</string>
-    <string name="item_article_description">Description de l\'article</string>
+    <string name="item_article_name">Name</string>
+    <string name="item_article_description">Description</string>
 
     <!-- Sign up bold -->
     <string name="no_account">Don\'t have an account? <b>Sign up</b></string>
 
     <!-- Sign in bold -->
     <string name="account">Have an account? <b>Sign in</b></string>
+
+    <!-- Paramètres -->
+    <string name="settings_page_title">Settings</string>
 
 </resources>

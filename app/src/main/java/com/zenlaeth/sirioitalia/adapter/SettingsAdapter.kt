@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.zenlaeth.sirioitalia.R
 
-class SettingAdapter: RecyclerView.Adapter<SettingAdapter.ViewHolder>() {
+class SettingsAdapter: RecyclerView.Adapter<SettingsAdapter.ViewHolder>() {
     val titles = arrayOf("Profile", "Order", "Address", "Payment")
     val images = arrayOf(R.drawable.ic_profile, R.drawable.ic_order, R.drawable.ic_address, R.drawable.ic_payment)
 

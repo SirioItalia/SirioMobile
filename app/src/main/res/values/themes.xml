@@ -30,4 +30,10 @@
         <item name="android:textSize">24sp</item>
     </style>
 
+    <!-- Creer un stule pour la bottom navigation view -->
+        <style name="BottomNavigationTheme" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/kanit</item>
+    </style>
+
 </resources>

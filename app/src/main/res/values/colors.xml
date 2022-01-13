@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="lighterBlue">#48CBFB</color>
     <color name="lightBlue">#33B5E5</color>
     <color name="blue">#3D99DF</color>
     <color name="teal_200">#FF03DAC5</color>

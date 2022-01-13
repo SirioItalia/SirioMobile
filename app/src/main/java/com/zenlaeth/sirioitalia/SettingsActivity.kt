@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.zenlaeth.sirioitalia.adapter.SettingAdapter
+import com.zenlaeth.sirioitalia.adapter.SettingsAdapter
 
 class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,7 +12,7 @@ class SettingsActivity : AppCompatActivity() {
         setContentView(R.layout.settings_activity)
 
         val recyclerView = findViewById<RecyclerView>(R.id.settingsRV)
-        val adapter = SettingAdapter()
+        val adapter = SettingsAdapter()
 
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter

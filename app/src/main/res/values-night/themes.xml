@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.SirioItalia" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/lighterBlue</item>
+        <item name="colorPrimary">@color/lightBlue</item>
         <item name="colorPrimaryVariant">@color/lightBlue</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
