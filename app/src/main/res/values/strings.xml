@@ -21,9 +21,9 @@
     <string name="add_article_page_confirm_button">Confirm</string>
 
     <!-- Fenetre page d'un article (à voir) -->
-    <string name="popup_article_name">@string/item_article_name</string>
-    <string name="popup_article_description_title">Description</string>
-    <string name="popup_article_description_subtitle">@string/item_article_description</string>
+    <string name="article_name_item">@string/item_article_name</string>
+    <string name="article_description_label_item">Description</string>
+    <string name="article_description_subtitle_item">@string/item_article_description</string>
 
     <!-- Article customize -->
     <string name="item_article_name">Name</string>

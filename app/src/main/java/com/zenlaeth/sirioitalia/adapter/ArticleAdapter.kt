@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.zenlaeth.sirioitalia.*
+import com.zenlaeth.sirioitalia.ArticleRepository.Singleton.articleList
 
 class ArticleAdapter(
     val context: HomeActivity,
@@ -23,10 +24,17 @@ class ArticleAdapter(
         val articleName:TextView? = view.findViewById(R.id.name_item)
         val articleDescription:TextView? = view.findViewById(R.id.description_item)
 
+        companion object {
+            val articleNameKey = "ARTICLE_NAME"
+            val articleImageKey = "ARTICLE_IMAGE"
+            val articleDescriptionKey = "ARTICLE_DESCRIPTION"
+        }
         init {
             view.setOnClickListener{
-                val intent = Intent(view.context, ArticleDetails::class.java)
-                // intent.putExtra("picture", articleImage)
+                val intent = Intent(view.context, ArticleDetailsActivity::class.java)
+                intent.putExtra(articleImageKey, articleImage.toString())
+                intent.putExtra(articleDescriptionKey, articleDescription?.text)
+                intent.putExtra(articleNameKey, articleName?.text)
                 view.context.startActivity(intent)
             }
         }
@@ -55,6 +63,9 @@ class ArticleAdapter(
 
         // mettre à jour la description de l'article
         holder.articleDescription?.text = currentArticle.description
+
+/*        // mettre à jour l'image (intent extra)
+        holder.articleImage?.drawable */
 
         // mettre à jour l'objet article
         repo.updateArticle(currentArticle)

@@ -10,12 +10,4 @@
          android:id="@+id/settingsRV"
          android:layout_width="match_parent"
          android:layout_height="match_parent" />
-
-
-     <!--<ListView
-         android:layout_width="match_parent"
-         android:layout_height="match_parent"
-         android:id="@+id/settingsLV"
-         tools:listitem="@layout/settings_list_item" />-->
-
 </RelativeLayout>

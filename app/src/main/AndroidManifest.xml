@@ -33,7 +33,7 @@
             android:exported="false"
             android:launchMode="singleTop" />
         <activity
-            android:name=".ArticleDetails"
+            android:name=".ArticleDetailsActivity"
             android:label="Article details">
             android:launchMode="singleTop">
             <meta-data

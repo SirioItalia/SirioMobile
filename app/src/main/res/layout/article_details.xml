@@ -8,9 +8,8 @@
         android:layout_width="match_parent"
         android:layout_height="300dp">
 
-
     <ImageView
-        android:id="@+id/image_item"
+        android:id="@+id/article_image_item"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
@@ -19,29 +18,29 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/popup_article_name"
+        android:id="@+id/article_detail_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/popup_article_name"
+        android:text="@string/article_name_item"
         style="@style/TitleTextStyle"
         android:layout_marginLeft="@dimen/default_margin"
         android:layout_marginTop="@dimen/default_margin"/>
 
     <TextView
-        android:id="@+id/popup_article_description"
+        android:id="@+id/article_detail_description_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/popup_article_description_title"
+        android:text="@string/article_description_label_item"
         android:layout_marginLeft="@dimen/default_margin"
         android:layout_marginTop="@dimen/default_margin"
         style="@style/TitleTextStyle"
         />
 
     <TextView
-        android:id="@+id/popup_article_description_subtitle"
+        android:id="@+id/article_detail_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/popup_article_description_subtitle"
+        android:text="@string/article_description_subtitle_item"
         android:layout_marginLeft="@dimen/default_margin"
         style="@style/DefaultTextStyle"
         />
