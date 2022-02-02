@@ -8,7 +8,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo_si"
-        android:label="@string/app_name"
+        android:label="SIRIO ITA"
         android:roundIcon="@drawable/logo_si"
         android:supportsRtl="true"
         android:theme="@style/Theme.SirioItalia">

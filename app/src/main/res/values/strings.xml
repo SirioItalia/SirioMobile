@@ -2,6 +2,7 @@
     <string name="app_name">Sirio Italia</string>
     <!-- Page d'accueil -->
     <string name="bottom_home_item">Home</string>
+    <string name="bottom_explorer_item">Explorer</string>
     <string name="bottom_settings_item">Settings</string>
 
     <!-- Page d'accueil -->
@@ -37,5 +38,15 @@
 
     <!-- Paramètres -->
     <string name="settings_page_title">Settings</string>
+
+    <!-- Recherche -->
+    <string name="explorer_page_title">Category</string>
+
+    <!-- Recherche icons -->
+    <string name="explorer_page_icon_table">Table</string>
+    <string name="explorer_page_icon_chair">Chair</string>
+    <string name="explorer_page_icon_sofa">Sofa</string>
+    <string name="explorer_page_icon_armchair">Armchair</string>
+    <string name="explorer_page_icon_desk">Desk</string>
 
 </resources>

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.zenlaeth.sirioitalia.fragments.ExplorerFragment
 import com.zenlaeth.sirioitalia.fragments.HomeFragment
 import com.zenlaeth.sirioitalia.fragments.SettingsFragment
 import org.w3c.dom.Text
@@ -24,6 +25,10 @@ class HomeActivity : AppCompatActivity() {
             {
                 R.id.home_page -> {
                     loadFragment(HomeFragment(this), R.string.home_page_title)
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.explorer_page -> {
+                    loadFragment(ExplorerFragment(), R.string.explorer_page_title)
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.settings_page -> {

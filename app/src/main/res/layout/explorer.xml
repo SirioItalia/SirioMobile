@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/icon_table"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="125dp"
+        android:src="@mipmap/icon_table"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/icon_chair"/>
+
+    <TextView
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/explorer_page_icon_table"
+        app:layout_constraintEnd_toEndOf="@+id/icon_table"
+        app:layout_constraintStart_toStartOf="@+id/icon_table"
+        app:layout_constraintTop_toBottomOf="@id/icon_table" />
+
+    <ImageView
+        android:id="@+id/icon_chair"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/icon_chair"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/explorer_page_icon_chair"
+        app:layout_constraintEnd_toEndOf="@+id/icon_chair"
+        app:layout_constraintStart_toStartOf="@+id/icon_chair"
+        app:layout_constraintTop_toBottomOf="@+id/icon_chair" />
+
+    <ImageView
+        android:id="@+id/icon_sofa"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="125dp"
+        android:src="@mipmap/icon_sofa"
+        app:layout_constraintStart_toStartOf="@id/icon_chair"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"/>
+
+    <TextView
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/explorer_page_icon_sofa"
+        app:layout_constraintEnd_toEndOf="@+id/icon_sofa"
+        app:layout_constraintStart_toStartOf="@+id/icon_sofa"
+        app:layout_constraintTop_toBottomOf="@+id/icon_sofa" />
+
+    <ImageView
+        android:id="@+id/icon_armchair"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="125dp"
+        android:src="@mipmap/icon_armchair"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/icon_desk"
+        app:layout_constraintEnd_toEndOf="@+id/icon_desk"/>
+
+    <TextView
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/explorer_page_icon_armchair"
+        app:layout_constraintEnd_toEndOf="@+id/icon_armchair"
+        app:layout_constraintStart_toStartOf="@+id/icon_armchair"
+        app:layout_constraintTop_toBottomOf="@+id/icon_armchair" />
+
+    <ImageView
+        android:id="@+id/icon_desk"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/icon_desk"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_chair" />
+
+    <TextView
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/explorer_page_icon_desk"
+        app:layout_constraintEnd_toEndOf="@+id/icon_desk"
+        app:layout_constraintStart_toStartOf="@+id/icon_desk"
+        app:layout_constraintTop_toBottomOf="@+id/icon_desk" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

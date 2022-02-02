@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/titleLabelTvSignUp"
-        android:layout_above="@+id/continueTv"
+        android:layout_above="@+id/continueTvSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
