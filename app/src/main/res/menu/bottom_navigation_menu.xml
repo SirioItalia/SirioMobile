@@ -9,6 +9,10 @@
         android:title="@string/bottom_explorer_item"
         android:icon="@drawable/ic_search"/>
     <item
+        android:id="@+id/cart_page"
+        android:title="@string/bottom_cart_item"
+        android:icon="@drawable/ic_cart"/>
+    <item
         android:id="@+id/settings_page"
         android:title="@string/bottom_settings_item"
         android:icon="@drawable/ic_settings"/>

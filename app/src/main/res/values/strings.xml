@@ -1,9 +1,18 @@
 <resources>
     <string name="app_name">Sirio Italia</string>
-    <!-- Page d'accueil -->
+
+    <!-- Sign up bold -->
+    <string name="no_account">Don\'t have an account? <b>Sign up</b></string>
+
+    <!-- Sign in bold -->
+    <string name="account">Have an account? <b>Sign in</b></string>
+
+    <!-- Page d'accueil - barre de recherche -->
     <string name="bottom_home_item">Home</string>
     <string name="bottom_explorer_item">Explorer</string>
+    <string name="bottom_cart_item">Cart</string>
     <string name="bottom_settings_item">Settings</string>
+
 
     <!-- Page d'accueil -->
     <string name="home_page_title">Discover</string>
@@ -30,15 +39,6 @@
     <string name="item_article_name">Name</string>
     <string name="item_article_description">Description</string>
 
-    <!-- Sign up bold -->
-    <string name="no_account">Don\'t have an account? <b>Sign up</b></string>
-
-    <!-- Sign in bold -->
-    <string name="account">Have an account? <b>Sign in</b></string>
-
-    <!-- Paramètres -->
-    <string name="settings_page_title">Settings</string>
-
     <!-- Recherche -->
     <string name="explorer_page_title">Category</string>
 
@@ -48,5 +48,11 @@
     <string name="explorer_page_icon_sofa">Sofa</string>
     <string name="explorer_page_icon_armchair">Armchair</string>
     <string name="explorer_page_icon_desk">Desk</string>
+
+    <!-- Panier -->
+    <string name="cart_page_title">Your Cart</string>
+
+    <!-- Paramètres -->
+    <string name="settings_page_title">Settings</string>
 
 </resources>

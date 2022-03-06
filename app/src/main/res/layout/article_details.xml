@@ -18,13 +18,21 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
+        android:id="@+id/article_detail_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        style="@style/TitleTextStyle"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"/>
+
+    <TextView
         android:id="@+id/article_detail_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/article_name_item"
-        style="@style/TitleTextStyle"
-        android:layout_marginLeft="@dimen/default_margin"
-        android:layout_marginTop="@dimen/default_margin"/>
+        style="@style/DefaultTextStyle"
+        android:layout_marginLeft="@dimen/default_margin" />
 
     <TextView
         android:id="@+id/article_detail_description_label"

@@ -9,7 +9,7 @@ import com.zenlaeth.sirioitalia.adapter.SettingsAdapter
 class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.settings_activity)
+        setContentView(R.layout.settings)
 
         val recyclerView = findViewById<RecyclerView>(R.id.settingsRV)
         val adapter = SettingsAdapter()

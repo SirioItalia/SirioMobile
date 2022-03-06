@@ -20,12 +20,12 @@ class ArticleDetailsActivity() : AppCompatActivity(){
         val textView: TextView = findViewById(R.id.article_detail_description)
         val textView2: TextView = findViewById(R.id.article_detail_name)
 
-        val bundle: Bundle = intent.extras!!
-        val articleImageKey: Int = bundle.getInt(ArticleAdapter.ViewHolder.articleImageKey)
+        val bundle: Bundle? = intent.extras
+        val articleImageId = bundle!!.getInt(ArticleAdapter.ViewHolder.articleImageKey)
         val articleDescription = intent.getStringExtra(ArticleAdapter.ViewHolder.articleDescriptionKey)
         val articleName = intent.getStringExtra(ArticleAdapter.ViewHolder.articleNameKey)
 
-        imageView.setImageResource(articleImageKey)
+        imageView.setImageResource(articleImageId)
         textView.text = articleDescription
         textView2.text = articleName
         /*val articleImageItem = findViewById<ImageView>(R.id.article_image_item)

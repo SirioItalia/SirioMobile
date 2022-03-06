@@ -13,7 +13,7 @@ import com.zenlaeth.sirioitalia.adapter.SettingsAdapter
 
 class SettingsFragment(private val context: HomeActivity) : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View?{
-        val view = inflater?.inflate(R.layout.settings_activity, container, false)
+        val view = inflater?.inflate(R.layout.settings, container, false)
 
         // recuperer recycler view
         val settingsRecyclerView = view.findViewById<RecyclerView>(R.id.settingsRV)
