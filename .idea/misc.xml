@@ -27,7 +27,7 @@
         <entry key="..\:/Users/zenla/AndroidStudioProjects/Sirio/app/src/main/res/mipmap-anydpi-v26/ic_order_round.xml" value="0.3828125" />
         <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/drawable-anydpi/ic_previous.xml" value="0.16944444444444445" />
         <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/drawable/rounded_edit_text.xml" value="0.26614583333333336" />
-        <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/activity_home.xml" value="0.176" />
         <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/article_details.xml" value="0.264" />
         <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/article_item_horizontal.xml" value="0.17255434782608695" />
@@ -37,18 +37,28 @@
         <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/card_payment.xml" value="0.2" />
         <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/cart.xml" value="0.264" />
         <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/explorer.xml" value="0.2" />
+        <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/explorer_categories.xml" value="0.264" />
+        <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/explorer_categories_list_item.xml" value="0.4" />
+        <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/explorer_result.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/item_horizontal_article.xml" value="0.25" />
         <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/item_vertical_article.xml" value="0.25" />
         <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/payment.xml" value="0.14166666666666666" />
         <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/payment_list_item.xml" value="0.13541666666666666" />
         <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/payments_list_item.xml" value="0.13541666666666666" />
-        <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/settings.xml" value="0.13541666666666666" />
+        <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/settings.xml" value="0.4" />
         <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/settings_activity.xml" value="0.11979166666666667" />
+        <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/settings_address.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/settings_adress.xml" value="0.19479166666666667" />
         <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/settings_list_item.xml" value="0.2" />
+        <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/settings_order.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/settings_payment.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/settings_profile.xml" value="0.12135416666666667" />
         <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/ship_to.xml" value="0.16799999999999998" />
         <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/layout/sign_in_activity.xml" value="0.264" />
-        <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.11979166666666667" />
+        <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.2" />
+        <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/menu/category_menu.xml" value="0.2" />
+        <entry key="..\:/Users/zenla/Documents/SirioItalia/app/src/main/res/menu/explorer_menu.xml" value="0.264" />
       </map>
     </option>
   </component>

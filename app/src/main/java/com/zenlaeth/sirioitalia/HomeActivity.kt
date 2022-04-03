@@ -29,7 +29,7 @@ class HomeActivity : AppCompatActivity() {
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.explorer_page -> {
-                    loadFragment(ExplorerFragment(), R.string.explorer_page_title)
+                    loadFragment(ExplorerFragment(this), R.string.explorer_page_title)
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.cart_page -> {

@@ -8,9 +8,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.zenlaeth.sirioitalia.R
 
-class SettingsAdapter(private var mListener: onItemClickListener): RecyclerView.Adapter<SettingsAdapter.ViewHolder>() {
-    val titles = arrayOf("Profile", "Order", "Address", "Payment")
-    val images = arrayOf(R.drawable.ic_profile, R.drawable.ic_order, R.drawable.ic_address, R.drawable.ic_payment)
+class ExplorerAdapter(private var mListener: onItemClickListener): RecyclerView.Adapter<ExplorerAdapter.ViewHolder>() {
+    val titles = arrayOf("Table", "Chair", "Sofa", "Armchair", "Desk")
+    val images = arrayOf(R.mipmap.icon_table, R.mipmap.icon_chair, R.mipmap.icon_sofa, R.mipmap.icon_armchair, R.mipmap.icon_desk)
 
 /*    private lateinit var mListener : onItemClickListener*/
 
@@ -23,25 +23,25 @@ class SettingsAdapter(private var mListener: onItemClickListener): RecyclerView.
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder {
-        val v = LayoutInflater.from(viewGroup.context).inflate(R.layout.settings_list_item, viewGroup, false)
+        val v = LayoutInflater.from(viewGroup.context).inflate(R.layout.explorer_categories_list_item, viewGroup, false)
         return ViewHolder(v, mListener)
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
-        viewHolder.settingsTitle.text = titles[i]
-        viewHolder.settingsImage.setImageResource(images[i])
+        viewHolder.explorerTitle.text = titles[i]
+        viewHolder.explorerImage.setImageResource(images[i])
     }
 
     override fun getItemCount(): Int {
         return titles.size
     }
     inner class ViewHolder(itemView: View, listener: onItemClickListener): RecyclerView.ViewHolder(itemView) {
-        var settingsImage: ImageView
-        var settingsTitle: TextView
+        var explorerImage: ImageView
+        var explorerTitle: TextView
 
         init {
-            settingsImage = itemView.findViewById(R.id.settings_image)
-            settingsTitle = itemView.findViewById(R.id.settings_title)
+            explorerImage = itemView.findViewById(R.id.explorer_image)
+            explorerTitle = itemView.findViewById(R.id.explorer_title)
             itemView.setOnClickListener {
                 listener.onItemClick(adapterPosition)
             }
