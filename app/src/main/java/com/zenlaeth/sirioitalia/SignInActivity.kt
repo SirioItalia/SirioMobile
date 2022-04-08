@@ -23,6 +23,7 @@ class SignInActivity : AppCompatActivity() {
             // Handler code here.
             val intent = Intent(this, SignUpActivity::class.java)
             this.startActivity(intent);
+            finish()
         }
     }
 }
