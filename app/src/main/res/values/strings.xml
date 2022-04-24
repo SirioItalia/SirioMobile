@@ -55,4 +55,10 @@
     <!-- Paramètres -->
     <string name="settings_page_title">Settings</string>
 
+    <!-- Genre user -->
+    <string-array name="planets_array">
+        <item>Homme</item>
+        <item>Femme</item>
+    </string-array>
+
 </resources>
