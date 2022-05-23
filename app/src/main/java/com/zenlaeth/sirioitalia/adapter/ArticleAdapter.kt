@@ -1,20 +1,18 @@
 package com.zenlaeth.sirioitalia.adapter
 
 import android.content.Intent
-import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.zenlaeth.sirioitalia.*
-import com.zenlaeth.sirioitalia.ArticleRepository.Singleton.articleList
+import com.zenlaeth.sirioitalia.api.FurnitureModel
 
 class ArticleAdapter(
     val context: HomeActivity,
-    private val articleList: List<ArticleModel>,
+    private val articleList: List<FurnitureModel>,
     private val layoutId: Int
 ) : RecyclerView.Adapter<ArticleAdapter.ViewHolder>(){
 
@@ -53,13 +51,13 @@ class ArticleAdapter(
         val currentArticle = articleList[position]
 
         // recuperer le repository
-        val repo = ArticleRepository()
+//        val repo = ArticleRepository()
 
         // utiliser glide pour recuperer l'image à partir de son lien -> composant
-        Glide.with(context).load(Uri.parse(currentArticle.imageUrl)).into(holder.articleImage)
+//        Glide.with(context).load(Uri.parse(currentArticle.imageUrl)).into(holder.articleImage)
 
         // mettre à jour le nom de l'article
-        holder.articleName?.text = currentArticle.name
+        holder.articleName?.text = currentArticle.label
 
         // mettre à jour la description de l'article
         holder.articleDescription?.text = currentArticle.description
@@ -68,7 +66,7 @@ class ArticleAdapter(
         holder.articleImage?.drawable */
 
         // mettre à jour l'objet article
-        repo.updateArticle(currentArticle)
+//        repo.updateArticle(currentArticle)
     }
 
     override fun getItemCount(): Int = articleList.size
