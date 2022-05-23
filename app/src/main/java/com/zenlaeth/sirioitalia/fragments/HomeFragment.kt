@@ -47,7 +47,7 @@ class HomeFragment(private val context: HomeActivity) : Fragment() {
                         hRecyclerView.adapter = ArticleAdapter(context as HomeActivity, response.body()!!, R.layout.article_item_horizontal)
                     }
                     vRecyclerView.apply {
-                        hRecyclerView.adapter = ArticleAdapter(context as HomeActivity, response.body()!!, R.layout.article_item_vertical)
+                        vRecyclerView.adapter = ArticleAdapter(context as HomeActivity, response.body()!!, R.layout.article_item_vertical)
                     }
                 }
             }

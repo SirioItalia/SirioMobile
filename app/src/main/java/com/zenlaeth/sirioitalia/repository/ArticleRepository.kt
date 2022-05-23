@@ -1,12 +1,6 @@
 package com.zenlaeth.sirioitalia.repository
 
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
-import com.zenlaeth.sirioitalia.ArticleModel
 import com.zenlaeth.sirioitalia.api.FurnitureModel
-import com.zenlaeth.sirioitalia.repository.ArticleRepository.Singleton.articleList
 
 class ArticleRepository {
     object Singleton {
