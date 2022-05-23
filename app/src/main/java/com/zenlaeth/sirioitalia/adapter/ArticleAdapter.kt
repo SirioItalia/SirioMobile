@@ -50,9 +50,6 @@ class ArticleAdapter(
         // recuperer les informations de l'article
         val currentArticle = articleList[position]
 
-        // recuperer le repository
-//        val repo = ArticleRepository()
-
         // utiliser glide pour recuperer l'image à partir de son lien -> composant
 //        Glide.with(context).load(Uri.parse(currentArticle.imageUrl)).into(holder.articleImage)
 
@@ -64,9 +61,6 @@ class ArticleAdapter(
 
 /*        // mettre à jour l'image (intent extra)
         holder.articleImage?.drawable */
-
-        // mettre à jour l'objet article
-//        repo.updateArticle(currentArticle)
     }
 
     override fun getItemCount(): Int = articleList.size

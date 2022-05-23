@@ -15,7 +15,6 @@ import com.zenlaeth.sirioitalia.adapter.ArticleItemDecoration
 import com.zenlaeth.sirioitalia.api.ApiService
 import com.zenlaeth.sirioitalia.api.FurnitureModel
 import com.zenlaeth.sirioitalia.api.ServiceGenerator
-import com.zenlaeth.sirioitalia.repository.ArticleRepository.Singleton.articleList
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -24,15 +23,6 @@ class HomeFragment(private val context: HomeActivity) : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view =  inflater?.inflate(R.layout.fragment_home, container, false)
-
-//        // recuperer le RecycleView
-//        val horizontalRecyclerView = view.findViewById<RecyclerView>(R.id.horizontal_recycler_view)
-//        horizontalRecyclerView.adapter = ArticleAdapter(context, articleList, R.layout.article_item_horizontal)
-//
-//        // recuperer le second RecycleView
-//        val verticalRecyclerView = view.findViewById<RecyclerView>(R.id.vertical_recycler_view)
-//        verticalRecyclerView.adapter = ArticleAdapter(context ,articleList, R.layout.article_item_vertical)
-//        verticalRecyclerView.addItemDecoration(ArticleItemDecoration())
 
         // charger api
         val hRecyclerView = view.findViewById<RecyclerView>(R.id.horizontal_recycler_view)
