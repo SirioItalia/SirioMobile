@@ -16,18 +16,27 @@ class ArticleDetailsActivity() : AppCompatActivity(){
         setContentView(R.layout.article_details)
 
         /*val image = intent.getStringExtra(ArticleAdapter.ViewHolder.articleImageKey)*/
-        val imageView: ImageView = findViewById(R.id.article_image_item)
-        val textView: TextView = findViewById(R.id.article_detail_description)
-        val textView2: TextView = findViewById(R.id.article_detail_name)
+        val articleImageIv: ImageView = findViewById(R.id.article_image_item)
+        val articleNameTv: TextView = findViewById(R.id.article_detail_name)
+        val articleDescriptionTv: TextView = findViewById(R.id.article_detail_description)
+        val articlePriceTv: TextView = findViewById(R.id.article_detail_price)
+        val articleDimensionTv: TextView = findViewById(R.id.article_detail_dimension)
+        val articleWeightTv: TextView = findViewById(R.id.article_detail_weight)
 
         val bundle: Bundle? = intent.extras
         val articleImageId = bundle!!.getInt(ArticleAdapter.ViewHolder.articleImageKey)
-        val articleDescription = intent.getStringExtra(ArticleAdapter.ViewHolder.articleDescriptionKey)
         val articleName = intent.getStringExtra(ArticleAdapter.ViewHolder.articleNameKey)
+        val articleDescription = intent.getStringExtra(ArticleAdapter.ViewHolder.articleDescriptionKey)
+        val articlePrice = intent.getStringExtra(ArticleAdapter.ViewHolder.articlePriceKey)
+        val articleDimension = intent.getStringExtra(ArticleAdapter.ViewHolder.articleDimensionKey)
+        val articleWeight = intent.getStringExtra(ArticleAdapter.ViewHolder.articleWeightKey)
 
-        imageView.setImageResource(articleImageId)
-        textView.text = articleDescription
-        textView2.text = articleName
+        articleImageIv.setImageResource(articleImageId)
+        articleNameTv.text = articleName
+        articleDescriptionTv.text = articleDescription
+        articlePriceTv.text = articlePrice
+        articleDimensionTv.text = articleDimension
+        articleWeightTv.text = articleWeight
         /*val articleImageItem = findViewById<ImageView>(R.id.article_image_item)
 */
     }

@@ -31,13 +31,20 @@
     <string name="add_article_page_confirm_button">Confirm</string>
 
     <!-- Fenetre page d'un article (à voir) -->
-    <string name="article_name_item">@string/item_article_name</string>
+    <string name="article_name_item">Name</string>
     <string name="article_description_label_item">Description</string>
-    <string name="article_description_subtitle_item">@string/item_article_description</string>
+    <string name="article_description_subtitle_item">Description</string>
+    <string name="article_detail_about_label">About</string>
+    <string name="article_detail_dimension">D</string>
+    <string name="article_detail_weight">Weight</string>
+    <string name="article_price_item">Price</string>
 
     <!-- Article customize -->
     <string name="item_article_name">Name</string>
     <string name="item_article_description">Description</string>
+    <string name="item_article_price">Price</string>
+    <string name="item_article_dimension">Dimension</string>
+    <string name="item_article_weight">Weight</string>
 
     <!-- Recherche -->
     <string name="explorer_page_title">Category</string>

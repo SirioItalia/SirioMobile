@@ -5,6 +5,7 @@ data class FurnitureModel(
     var description: String,
     var dimension: Dimension,
     var id: Int,
+    var price: Int,
     var items: Any,
     var label: String,
     var weight: Int
