@@ -24,6 +24,8 @@ class ArticleAdapter(
         val articlePrice:TextView? = view.findViewById(R.id.price_item)
         val articleDimension:TextView? = view.findViewById(R.id.dimension_item)
         val articleWeight:TextView? = view.findViewById(R.id.weight_item)
+        val articleColorsName:TextView? = view.findViewById(R.id.colors_name_item)
+        val articleColorsHexa:TextView? = view.findViewById(R.id.colors_hexa_item)
 
         companion object {
             val articleNameKey = "ARTICLE_NAME"
@@ -32,6 +34,8 @@ class ArticleAdapter(
             val articlePriceKey = "ARTICLE_PRICE"
             val articleDimensionKey = "ARTICLE_DIMENSION"
             val articleWeightKey = "ARTICLE_WEIGHT"
+            val articleColorsNameKey = "ARTICLE_NAME_COLORS"
+            val articleColorsHexaKey = "ARTICLE_Hexa_COLORS"
         }
         init {
             view.setOnClickListener{
@@ -42,6 +46,8 @@ class ArticleAdapter(
                 intent.putExtra(articlePriceKey, articlePrice?.text)
                 intent.putExtra(articleDimensionKey, articleDimension?.text)
                 intent.putExtra(articleWeightKey, articleWeight?.text)
+                intent.putExtra(articleColorsNameKey, articleColorsName?.text)
+                intent.putExtra(articleColorsHexaKey, articleColorsHexa?.text)
                 view.context.startActivity(intent)
             }
         }
@@ -65,7 +71,6 @@ class ArticleAdapter(
         // mettre à jour champs articles
         holder.articleName?.text = currentArticle.label
         holder.articleDescription?.text = currentArticle.description
-        holder.articlePrice?.text = currentArticle.price.toString() + " €"
         var listDimension = mutableListOf<String>()
 
         listDimension.add(currentArticle.dimension.length.toString())
@@ -75,6 +80,25 @@ class ArticleAdapter(
         holder.articleDimension?.text = listDimension.joinToString(separator=" x ")
 
         holder.articleWeight?.text = currentArticle.weight.toString() + "kg"
+
+        var listPrice = mutableListOf<String>()
+        var listColorName = mutableListOf<String>()
+        var listColorHexa = mutableListOf<String>()
+
+        currentArticle.items.forEach(){
+            listPrice.add(it.price.toString())
+            listColorName.add(it.color.label)
+            listColorHexa.add(it.color.hexadecimalCode)
+        }
+
+        // price
+        val min = listPrice.minOrNull() ?: 0
+        val max = listPrice.maxOrNull() ?: 0
+        holder.articlePrice?.text = "$min ~ $max €"
+
+        // colors
+        holder.articleColorsName?.text = listColorName.joinToString(separator="-")
+        holder.articleColorsHexa?.text = listColorHexa.joinToString(separator="-")
 
 /*        // mettre à jour l'image (intent extra)
         holder.articleImage?.drawable */

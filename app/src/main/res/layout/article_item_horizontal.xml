@@ -55,4 +55,20 @@
         android:text="@string/item_article_dimension"
         android:visibility="invisible"/>
 
+    <TextView
+        android:id="@+id/colors_name_item"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_article_dimension"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/colors_hexa_item"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_article_dimension"
+        android:visibility="invisible"/>
+
 </androidx.cardview.widget.CardView>

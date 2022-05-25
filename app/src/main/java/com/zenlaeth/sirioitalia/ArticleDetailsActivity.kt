@@ -1,14 +1,12 @@
 package com.zenlaeth.sirioitalia
 
-import android.media.Image
-import android.net.Uri
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.bumptech.glide.Glide
+import androidx.recyclerview.widget.RecyclerView
 import com.zenlaeth.sirioitalia.adapter.ArticleAdapter
+import com.zenlaeth.sirioitalia.adapter.ArticleDetailsAdapter
 
 class ArticleDetailsActivity() : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +20,8 @@ class ArticleDetailsActivity() : AppCompatActivity(){
         val articlePriceTv: TextView = findViewById(R.id.article_detail_price)
         val articleDimensionTv: TextView = findViewById(R.id.article_detail_dimension)
         val articleWeightTv: TextView = findViewById(R.id.article_detail_weight)
+        val colorRecyclerView = findViewById<RecyclerView>(R.id.article_colors_recycler_view)
+
 
         val bundle: Bundle? = intent.extras
         val articleImageId = bundle!!.getInt(ArticleAdapter.ViewHolder.articleImageKey)
@@ -30,6 +30,12 @@ class ArticleDetailsActivity() : AppCompatActivity(){
         val articlePrice = intent.getStringExtra(ArticleAdapter.ViewHolder.articlePriceKey)
         val articleDimension = intent.getStringExtra(ArticleAdapter.ViewHolder.articleDimensionKey)
         val articleWeight = intent.getStringExtra(ArticleAdapter.ViewHolder.articleWeightKey)
+        val articleColorsName = intent.getStringExtra(ArticleAdapter.ViewHolder.articleColorsNameKey)
+        val articleColorsHexa = intent.getStringExtra(ArticleAdapter.ViewHolder.articleColorsHexaKey)
+
+        colorRecyclerView.apply {
+            colorRecyclerView.adapter = ArticleDetailsAdapter(context as ArticleDetailsActivity, articleColorsHexa, articleColorsName)
+        }
 
         articleImageIv.setImageResource(articleImageId)
         articleNameTv.text = articleName
