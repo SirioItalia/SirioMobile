@@ -15,34 +15,34 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:gravity="center">
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/cuponTilCart"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true">
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:gravity="center">-->
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/cuponTilCart"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true">-->
 
-                    <EditText
-                        android:id="@+id/cuponEtCart"
-                        style="@style/DefaultTextStyle"
-                        android:layout_width="250dp"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/rounded_edit_text"
-                        android:hint="Enter Cupon Code"
-                        android:inputType="text" />
-                </com.google.android.material.textfield.TextInputLayout>
+<!--                    <EditText-->
+<!--                        android:id="@+id/cuponEtCart"-->
+<!--                        style="@style/DefaultTextStyle"-->
+<!--                        android:layout_width="250dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@drawable/rounded_edit_text"-->
+<!--                        android:hint="Enter Cupon Code"-->
+<!--                        android:inputType="text" />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
 
-                <Button
-                    android:id="@+id/applyBCart"
-                    android:layout_width="120dp"
-                    android:layout_height="match_parent"
-                    android:text="Apply" />
+<!--                <Button-->
+<!--                    android:id="@+id/applyBCart"-->
+<!--                    android:layout_width="120dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="Apply" />-->
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/vertical_recycler_view"

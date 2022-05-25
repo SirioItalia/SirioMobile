@@ -1,5 +1,6 @@
 package com.zenlaeth.sirioitalia.api
 
+import com.zenlaeth.sirioitalia.models.CategoryModel
 import com.zenlaeth.sirioitalia.models.NewUser
 import retrofit2.Call
 import retrofit2.http.Body
@@ -9,6 +10,9 @@ import retrofit2.http.POST
 interface ApiService {
     @GET("/furnitures")
     fun getFurnitures() :Call<MutableList<FurnitureModel>>
+
+    @GET("/categories")
+    fun getCategories() :Call<MutableList<CategoryModel>>
 
     // User
     @POST("/users/register")

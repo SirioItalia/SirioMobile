@@ -15,7 +15,6 @@ import com.zenlaeth.sirioitalia.api.ServiceGenerator
 import com.zenlaeth.sirioitalia.models.Address
 import com.zenlaeth.sirioitalia.models.NewUser
 import com.zenlaeth.sirioitalia.models.Role
-import com.zenlaeth.sirioitalia.models.UserModel
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

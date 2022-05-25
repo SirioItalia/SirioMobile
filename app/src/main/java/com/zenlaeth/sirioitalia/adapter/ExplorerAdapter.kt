@@ -1,15 +1,22 @@
 package com.zenlaeth.sirioitalia.adapter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.zenlaeth.sirioitalia.HomeActivity
 import com.zenlaeth.sirioitalia.R
+import com.zenlaeth.sirioitalia.models.CategoryModel
 
-class ExplorerAdapter(private var mListener: onItemClickListener): RecyclerView.Adapter<ExplorerAdapter.ViewHolder>() {
-    val titles = arrayOf("Table", "Chair", "Sofa", "Armchair", "Desk")
+class ExplorerAdapter(
+    private var mListener: onItemClickListener,
+    val context: HomeActivity,
+    private val categoryList: List<CategoryModel>,
+    ): RecyclerView.Adapter<ExplorerAdapter.ViewHolder>() {
+
     val images = arrayOf(R.mipmap.icon_table, R.mipmap.icon_chair, R.mipmap.icon_sofa, R.mipmap.icon_armchair, R.mipmap.icon_desk)
 
 /*    private lateinit var mListener : onItemClickListener*/
@@ -28,12 +35,13 @@ class ExplorerAdapter(private var mListener: onItemClickListener): RecyclerView.
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
-        viewHolder.explorerTitle.text = titles[i]
+        val currentCategory = categoryList[i]
+        viewHolder.explorerTitle.text = currentCategory.label
         viewHolder.explorerImage.setImageResource(images[i])
     }
 
     override fun getItemCount(): Int {
-        return titles.size
+        return categoryList.size
     }
     inner class ViewHolder(itemView: View, listener: onItemClickListener): RecyclerView.ViewHolder(itemView) {
         var explorerImage: ImageView
