@@ -19,19 +19,23 @@ class ArticleAdapter(
     // boite pour ranger tous les composants à controler
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
         val articleImage = view.findViewById<ImageView>(R.id.image_item)
+        val articleId:TextView? = view.findViewById(R.id.id_item)
         val articleName:TextView? = view.findViewById(R.id.name_item)
         val articleDescription:TextView? = view.findViewById(R.id.description_item)
         val articlePrice:TextView? = view.findViewById(R.id.price_item)
+        val articlePrices:TextView? = view.findViewById(R.id.prices_item)
         val articleDimension:TextView? = view.findViewById(R.id.dimension_item)
         val articleWeight:TextView? = view.findViewById(R.id.weight_item)
         val articleColorsName:TextView? = view.findViewById(R.id.colors_name_item)
         val articleColorsHexa:TextView? = view.findViewById(R.id.colors_hexa_item)
 
         companion object {
+            val articleIdKey = "ARTICLE_ID"
             val articleNameKey = "ARTICLE_NAME"
             val articleImageKey = "ARTICLE_IMAGE"
             val articleDescriptionKey = "ARTICLE_DESCRIPTION"
             val articlePriceKey = "ARTICLE_PRICE"
+            val articlePricesKey = "ARTICLE_PRICES"
             val articleDimensionKey = "ARTICLE_DIMENSION"
             val articleWeightKey = "ARTICLE_WEIGHT"
             val articleColorsNameKey = "ARTICLE_NAME_COLORS"
@@ -43,7 +47,9 @@ class ArticleAdapter(
                 intent.putExtra(articleImageKey, articleImage.toString())
                 intent.putExtra(articleDescriptionKey, articleDescription?.text)
                 intent.putExtra(articleNameKey, articleName?.text)
+                intent.putExtra(articleIdKey, articleId?.text)
                 intent.putExtra(articlePriceKey, articlePrice?.text)
+                intent.putExtra(articlePricesKey, articlePrices?.text)
                 intent.putExtra(articleDimensionKey, articleDimension?.text)
                 intent.putExtra(articleWeightKey, articleWeight?.text)
                 intent.putExtra(articleColorsNameKey, articleColorsName?.text)
@@ -69,6 +75,7 @@ class ArticleAdapter(
 //        Glide.with(context).load(Uri.parse(currentArticle.imageUrl)).into(holder.articleImage)
 
         // mettre à jour champs articles
+        holder.articleId?.text = currentArticle.id.toString()
         holder.articleName?.text = currentArticle.label
         holder.articleDescription?.text = currentArticle.description
         var listDimension = mutableListOf<String>()
@@ -95,6 +102,7 @@ class ArticleAdapter(
         val min = listPrice.minOrNull() ?: 0
         val max = listPrice.maxOrNull() ?: 0
         holder.articlePrice?.text = "$min ~ $max €"
+        holder.articlePrices?.text = listPrice.joinToString(separator="-")
 
         // colors
         holder.articleColorsName?.text = listColorName.joinToString(separator="-")
