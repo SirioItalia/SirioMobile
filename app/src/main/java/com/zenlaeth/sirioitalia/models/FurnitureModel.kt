@@ -25,7 +25,7 @@ data class Item(
     var color: Color,
     var id: Int,
     var images: List<Any>,
-    var price: Int,
+    var price: Double,
     var ratings: List<Any>
 )
 
