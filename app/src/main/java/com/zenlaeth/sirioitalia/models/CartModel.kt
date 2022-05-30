@@ -1,6 +1,7 @@
 package com.zenlaeth.sirioitalia.models
 
 data class CartModel(
+    val quantity: Int,
     val cartPK: CartPK,
     val item: Item,
     val user: User
@@ -17,7 +18,8 @@ data class Item(
     val description: String,
     val furnitureId: String,
     val id: Int,
-    val label: String
+    val label: String,
+    val price: Double,
 )
 
 data class User(

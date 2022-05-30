@@ -23,6 +23,7 @@ class CartAdapter(
         val articleName:TextView? = view.findViewById(R.id.name_item)
         val articleDescription:TextView? = view.findViewById(R.id.description_item)
         val articlePrice:TextView? = view.findViewById(R.id.price_item)
+        val articleQuantity:TextView? = view.findViewById(R.id.quantity_item)
 
         companion object {
             val articleIdKey = "ARTICLE_ID"
@@ -30,6 +31,7 @@ class CartAdapter(
             val articleImageKey = "ARTICLE_IMAGE"
             val articleDescriptionKey = "ARTICLE_DESCRIPTION"
             val articlePriceKey = "ARTICLE_PRICE"
+            val articleQuantityKey = "ARTICLE_QUANTITY"
         }
     }
 
@@ -51,9 +53,10 @@ class CartAdapter(
         // mettre à jour champs articles
         holder.articleName?.text = currentArticle.item.label
         holder.articleDescription?.text = currentArticle.item.description
-        // add quantite, prix et id item
+        // add quantite, prix et id
 //        holder.articleId?.text = currentArticle.id.toString()
-//        holder.articlePrice?.text = currentArticle.item.price
+        holder.articlePrice?.text = currentArticle.item.price.toString() + " €"
+        holder.articleQuantity?.text = currentArticle.quantity.toString()
 
 /*        // mettre à jour l'image (intent extra)
         holder.articleImage?.drawable */
