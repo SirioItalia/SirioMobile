@@ -1,10 +1,11 @@
-package com.zenlaeth.sirioitalia
+package com.zenlaeth.sirioitalia.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.zenlaeth.sirioitalia.R
 import com.zenlaeth.sirioitalia.fragments.CartFragment
 import com.zenlaeth.sirioitalia.fragments.ExplorerFragment
 import com.zenlaeth.sirioitalia.fragments.HomeFragment

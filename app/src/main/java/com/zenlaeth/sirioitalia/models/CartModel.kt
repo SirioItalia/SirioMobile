@@ -1,15 +1,47 @@
 package com.zenlaeth.sirioitalia.models
 
-data class NewCart(
-    var quantity: Int,
-    var item: Item,
-    var user: User,
+data class CartModel(
+    val cartPK: CartPK,
+    val item: Item,
+    val user: User
+)
+
+data class CartPK(
+    val itemId: Int,
+    val userId: Int
 )
 
 data class Item(
-    var id: Int,
+    val category: String,
+    val color: Color,
+    val description: String,
+    val furnitureId: String,
+    val id: Int,
+    val label: String
 )
 
 data class User(
+    val firstName: String,
+    val id: Int,
+    val lastName: String
+)
+
+data class Color(
+    val hexadecimalCode: String,
+    val id: Int,
+    val label: String
+)
+
+data class NewCart(
+    var quantity: Int,
+    var item: NewCartItem,
+    var user: NewCartUser,
+)
+
+data class NewCartItem(
+    var id: Int,
+)
+
+data class NewCartUser(
     var id: Int,
 )

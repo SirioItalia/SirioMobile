@@ -6,12 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.zenlaeth.sirioitalia.HomeActivity
+import com.zenlaeth.sirioitalia.activity.HomeActivity
 import com.zenlaeth.sirioitalia.R
 import com.zenlaeth.sirioitalia.adapter.ArticleAdapter
-import com.zenlaeth.sirioitalia.adapter.ArticleItemDecoration
 import com.zenlaeth.sirioitalia.api.ApiService
 import com.zenlaeth.sirioitalia.api.FurnitureModel
 import com.zenlaeth.sirioitalia.api.ServiceGenerator

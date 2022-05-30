@@ -1,13 +1,12 @@
 package com.zenlaeth.sirioitalia.adapter
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.zenlaeth.sirioitalia.HomeActivity
+import com.zenlaeth.sirioitalia.activity.HomeActivity
 import com.zenlaeth.sirioitalia.R
 import com.zenlaeth.sirioitalia.models.CategoryModel
 

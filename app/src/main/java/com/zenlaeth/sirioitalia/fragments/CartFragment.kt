@@ -9,14 +9,13 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
-import com.zenlaeth.sirioitalia.CartActivity
-import com.zenlaeth.sirioitalia.HomeActivity
+import com.zenlaeth.sirioitalia.activity.HomeActivity
 import com.zenlaeth.sirioitalia.R
-import com.zenlaeth.sirioitalia.ShipToActivity
-import com.zenlaeth.sirioitalia.adapter.ArticleAdapter
+import com.zenlaeth.sirioitalia.activity.ShipToActivity
+import com.zenlaeth.sirioitalia.adapter.CartAdapter
 import com.zenlaeth.sirioitalia.api.ApiService
-import com.zenlaeth.sirioitalia.api.FurnitureModel
 import com.zenlaeth.sirioitalia.api.ServiceGenerator
+import com.zenlaeth.sirioitalia.models.CartModel
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -34,18 +33,18 @@ class CartFragment : Fragment() {
         // charger api
         val vRecyclerView = view.findViewById<RecyclerView>(R.id.vertical_recycler_view)
         val serviceGenerator = ServiceGenerator.buildService(ApiService::class.java)
-        val call = serviceGenerator.getFurnitures()
+        val call = serviceGenerator.getCarts()
 
-        call.enqueue(object : Callback<MutableList<FurnitureModel>> {
-            override fun onResponse(call: Call<MutableList<FurnitureModel>>, response: Response<MutableList<FurnitureModel>>) {
+        call.enqueue(object : Callback<MutableList<CartModel>> {
+            override fun onResponse(call: Call<MutableList<CartModel>>, response: Response<MutableList<CartModel>>) {
                 if(response.isSuccessful){
                     vRecyclerView.apply {
-                        vRecyclerView.adapter = ArticleAdapter(context as HomeActivity, response.body()!!, R.layout.article_item_vertical)
+                        vRecyclerView.adapter = CartAdapter(context as HomeActivity, response.body()!!, R.layout.cart_item_vertical)
                     }
                 }
             }
 
-            override fun onFailure(call: Call<MutableList<FurnitureModel>>, t: Throwable) {
+            override fun onFailure(call: Call<MutableList<CartModel>>, t: Throwable) {
                 t.printStackTrace()
                 Log.e("error", t.message.toString())
             }

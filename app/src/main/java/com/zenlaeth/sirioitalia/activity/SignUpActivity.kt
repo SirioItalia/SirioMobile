@@ -1,4 +1,4 @@
-package com.zenlaeth.sirioitalia
+package com.zenlaeth.sirioitalia.activity
 
 import android.content.Intent
 import android.os.Build
@@ -9,7 +9,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
-import com.zenlaeth.sirioitalia.adapter.ArticleAdapter
+import com.zenlaeth.sirioitalia.R
 import com.zenlaeth.sirioitalia.api.ApiService
 import com.zenlaeth.sirioitalia.api.ServiceGenerator
 import com.zenlaeth.sirioitalia.models.Address
@@ -18,8 +18,6 @@ import com.zenlaeth.sirioitalia.models.Role
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
 
 class SignUpActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)

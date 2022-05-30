@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SirioItalia">
         <activity
-            android:name=".SignInActivity"
+            android:name=".activity.SignInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,86 +23,86 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SignUpActivity"
+            android:name=".activity.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".activity.HomeActivity"
             android:exported="false"
             android:launchMode="singleTop" />
         <activity
-            android:name=".SettingsProfileActivity"
+            android:name=".activity.SettingsProfileActivity"
             android:label="Profile"
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HomeActivity" />
+                android:value=".activity.HomeActivity" />
         </activity>
         <activity
-            android:name=".SettingsOrderActivity"
+            android:name=".activity.SettingsOrderActivity"
             android:label="Order"
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HomeActivity" />
+                android:value=".activity.HomeActivity" />
         </activity>
         <activity
-            android:name=".SettingsAddressActivity"
+            android:name=".activity.SettingsAddressActivity"
             android:label="Address"
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HomeActivity" />
+                android:value=".activity.HomeActivity" />
         </activity>
         <activity
-            android:name=".SettingsPaymentActivity"
+            android:name=".activity.SettingsPaymentActivity"
             android:label="Payment"
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HomeActivity" />
+                android:value=".activity.HomeActivity" />
         </activity>
         <activity
-            android:name=".ArticleDetailsActivity"
+            android:name=".activity.ArticleDetailsActivity"
             android:label="Article details"
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HomeActivity" />
+                android:value=".activity.HomeActivity" />
         </activity>
         <activity
-            android:name=".ExplorerResultActivity"
+            android:name=".activity.ExplorerResultActivity"
             android:label="Explorer"
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HomeActivity" />
+                android:value=".activity.HomeActivity" />
         </activity>
         <activity
-            android:name=".CartActivity"
+            android:name=".activity.CartActivity"
             android:exported="false" />
         <activity
-            android:name=".ShipToActivity"
+            android:name=".activity.ShipToActivity"
             android:label="Ship To"
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".CartActivity" />
+                android:value=".activity.CartActivity" />
         </activity>
         <activity
-            android:name=".PaymentActivity"
+            android:name=".activity.PaymentActivity"
             android:label="Payment"
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ShipToActivity" />
+                android:value=".activity.ShipToActivity" />
         </activity>
         <activity
-            android:name=".CardPaymentActivity"
+            android:name=".activity.CardPaymentActivity"
             android:label="Choose Card"
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PaymentActivity" />
+                android:value=".activity.PaymentActivity" />
         </activity>
     </application>
 

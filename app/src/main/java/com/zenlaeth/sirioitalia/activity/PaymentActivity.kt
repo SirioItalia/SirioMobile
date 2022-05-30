@@ -1,13 +1,12 @@
-package com.zenlaeth.sirioitalia
+package com.zenlaeth.sirioitalia.activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.zenlaeth.sirioitalia.R
 import com.zenlaeth.sirioitalia.adapter.PaymentAdapter
-import com.zenlaeth.sirioitalia.adapter.SettingsAdapter
 
 class PaymentActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {

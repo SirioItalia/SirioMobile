@@ -1,11 +1,12 @@
-package com.zenlaeth.sirioitalia
+package com.zenlaeth.sirioitalia.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.zenlaeth.sirioitalia.R
 
-class SettingsOrderActivity : AppCompatActivity(){
+class ExplorerResultActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.settings_order)
+        setContentView(R.layout.explorer_result)
     }
 }

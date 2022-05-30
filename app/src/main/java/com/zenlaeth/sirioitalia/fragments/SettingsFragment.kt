@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.zenlaeth.sirioitalia.*
+import com.zenlaeth.sirioitalia.activity.*
 import com.zenlaeth.sirioitalia.adapter.SettingsAdapter
 
 class SettingsFragment(private val context: HomeActivity) : Fragment() {

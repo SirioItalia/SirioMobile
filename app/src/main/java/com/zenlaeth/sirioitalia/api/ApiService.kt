@@ -1,5 +1,6 @@
 package com.zenlaeth.sirioitalia.api
 
+import com.zenlaeth.sirioitalia.models.CartModel
 import com.zenlaeth.sirioitalia.models.CategoryModel
 import com.zenlaeth.sirioitalia.models.NewCart
 import com.zenlaeth.sirioitalia.models.NewUser
@@ -20,7 +21,9 @@ interface ApiService {
     fun createUser(@Body request: NewUser) :Call<MutableList<NewUser>>
 
     // carts
-    // User
+    @GET("/carts")
+    fun getCarts() :Call<MutableList<CartModel>>
+
     @POST("/carts")
     fun createCart(@Body request: NewCart) :Call<MutableList<NewCart>>
 

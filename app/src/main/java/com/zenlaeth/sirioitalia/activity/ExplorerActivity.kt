@@ -1,7 +1,8 @@
-package com.zenlaeth.sirioitalia
+package com.zenlaeth.sirioitalia.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.zenlaeth.sirioitalia.R
 
 class ExplorerActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,17 +1,16 @@
-package com.zenlaeth.sirioitalia
+package com.zenlaeth.sirioitalia.activity
 
 import android.os.Bundle
 import android.util.Log
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.zenlaeth.sirioitalia.R
 import com.zenlaeth.sirioitalia.adapter.ArticleAdapter
 import com.zenlaeth.sirioitalia.adapter.ArticleDetailsAdapter
 import com.zenlaeth.sirioitalia.api.ApiService
 import com.zenlaeth.sirioitalia.api.ServiceGenerator
-import com.zenlaeth.sirioitalia.models.Item
-import com.zenlaeth.sirioitalia.models.NewCart
-import com.zenlaeth.sirioitalia.models.User
+import com.zenlaeth.sirioitalia.models.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -34,6 +33,7 @@ class ArticleDetailsActivity() : AppCompatActivity(){
 
         val bundle: Bundle? = intent.extras
 //        val articleImageId = bundle!!.getInt(ArticleAdapter.ViewHolder.articleImageKey)
+        val articleItemId = intent.getStringExtra(ArticleAdapter.ViewHolder.articleIdKey)
         val articleName = intent.getStringExtra(ArticleAdapter.ViewHolder.articleNameKey)
         val articleDescription = intent.getStringExtra(ArticleAdapter.ViewHolder.articleDescriptionKey)
         val articlePrice = intent.getStringExtra(ArticleAdapter.ViewHolder.articlePriceKey)
@@ -64,14 +64,13 @@ class ArticleDetailsActivity() : AppCompatActivity(){
 */
         var loginB = findViewById<Button>(R.id.addBCart)
         loginB.setOnClickListener {
-            val itemId = findViewById<TextView>(R.id.article_item_id).text.toString().trim()
-            val userId = 1 // testCart
+            val userId = 4 // testCart
 
             val serviceGenerator = ServiceGenerator.buildService(ApiService::class.java)
 
             var cart = NewCart(1, // testCart
-                Item(itemId.toInt()),
-                User(userId)
+                NewCartItem(articleItemId!!.toInt()),
+                NewCartUser(userId)
             )
 
             var call = serviceGenerator.createCart(cart)
@@ -84,6 +83,7 @@ class ArticleDetailsActivity() : AppCompatActivity(){
 
                 override fun onFailure(call: Call<MutableList<NewCart>>, t: Throwable) {
                     Toast.makeText(applicationContext, t.message, Toast.LENGTH_LONG).show()
+                    t.message?.let { it1 -> Log.e("error", it1) }
                 }
             })
         }

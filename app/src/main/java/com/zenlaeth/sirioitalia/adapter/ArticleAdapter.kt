@@ -8,6 +8,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.zenlaeth.sirioitalia.*
+import com.zenlaeth.sirioitalia.activity.ArticleDetailsActivity
+import com.zenlaeth.sirioitalia.activity.HomeActivity
 import com.zenlaeth.sirioitalia.api.FurnitureModel
 
 class ArticleAdapter(
