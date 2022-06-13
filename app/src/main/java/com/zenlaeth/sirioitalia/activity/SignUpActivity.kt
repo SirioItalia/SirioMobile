@@ -18,6 +18,12 @@ import com.zenlaeth.sirioitalia.models.Role
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import okhttp3.MultipartBody
+
+import okhttp3.RequestBody
+
+
+
 
 class SignUpActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
@@ -105,6 +111,7 @@ class SignUpActivity : AppCompatActivity() {
                 phoneNumber,
                 Role(1)
             )
+
             var call = serviceGenerator.createUser(user)
 
             call.enqueue(object : Callback<MutableList<NewUser>> {
