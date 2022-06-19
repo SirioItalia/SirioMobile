@@ -1,5 +1,6 @@
 package com.zenlaeth.sirioitalia.activity
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.widget.*
@@ -64,7 +65,8 @@ class ArticleDetailsActivity() : AppCompatActivity(){
 */
         var loginB = findViewById<Button>(R.id.addBCart)
         loginB.setOnClickListener {
-            val userId = 4 // testCart
+            val sharedPreferences = getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
+            val userId = sharedPreferences.getInt("ID_KEY", 0)
 
             val serviceGenerator = ServiceGenerator.buildService(ApiService::class.java)
 
